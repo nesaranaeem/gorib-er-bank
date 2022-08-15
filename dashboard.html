@@ -10,20 +10,37 @@
   <body>
     <header>
       <h1 class="text-4xl mt-6 text-center">
-        Welcome To
+        Your
         <span
           class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-500 relative inline-block"
         >
-          <span class="relative text-white">Gorib</span>
+          <span class="relative text-white">Dashboard</span>
         </span>
-        Er Bank
+        Overview
       </h1>
     </header>
     <main>
-      <div class="bg-gray-500 text-white w-2/12 mx-auto mt-6">
+      <div class="bg-gray-500 text-center text-white w-3/12 mx-auto mt-6">
         Date: <span id="date-time"></span>
       </div>
+      <section class="pt-7 text-white text-center">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-9/12 mx-auto">
+          <div class="bg-green-600 p-9 rounded-xl hover:bg-red-600">
+            <h4 class="text-3xl font-medium">Diposit</h4>
+            <h2 class="font-bold text-5xl">0$</h2>
+          </div>
+          <div class="bg-pink-700 p-9 rounded-xl hover:bg-red-600">
+            <h4 class="text-3xl font-medium">Withdraw</h4>
+            <h2 class="font-bold text-5xl">0$</h2>
+          </div>
+          <div class="bg-rose-700 p-9 rounded-xl hover:bg-red-600">
+            <h4 class="text-3xl font-medium">Balance</h4>
+            <h2 class="font-bold text-5xl">0$</h2>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/datetime.js"></script>
+    <script src="./tailwind.config.js"></script>
   </body>
 </html>
