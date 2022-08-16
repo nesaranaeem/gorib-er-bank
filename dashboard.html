@@ -24,15 +24,21 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-9/12 mx-auto">
           <div class="bg-green-600 p-9 rounded-xl hover:bg-red-600">
             <h4 class="text-3xl font-medium">Diposit</h4>
-            <h2 class="font-bold text-5xl">0$</h2>
+            <h2 class="font-bold text-5xl">
+              $<span id="diposit-total">0</span>
+            </h2>
           </div>
           <div class="bg-pink-700 p-9 rounded-xl hover:bg-red-600">
             <h4 class="text-3xl font-medium">Withdraw</h4>
-            <h2 class="font-bold text-5xl">0$</h2>
+            <h2 class="font-bold text-5xl">
+              $<span id="withdraw-total">0</span>
+            </h2>
           </div>
           <div class="bg-lime-800 p-9 rounded-xl hover:bg-red-600">
             <h4 class="text-3xl font-medium">Balance</h4>
-            <h2 class="font-bold text-5xl">500$</h2>
+            <h2 class="font-bold text-5xl">
+              $<span id="balance-total">50</span>
+            </h2>
           </div>
         </div>
         <!-- input section start -->
@@ -44,11 +50,11 @@
               type="number"
               name=""
               class="bg-slate-300 block my-3 w-full rounded text-orange-900"
-              id="btn-diposit"
+              id="diposit-amount"
               placeholder="$ Amount To Diposit"
             />
             <button
-              id="btn-login"
+              id="btn-diposit"
               class="bg-green-600 px-8 py-2 rounded-lg hover:bg-red-600"
             >
               Diposit
@@ -60,11 +66,11 @@
               type="number"
               name=""
               class="bg-slate-300 block my-3 w-full rounded text-orange-900"
-              id="btn-withdraw"
+              id="withdraw-amount"
               placeholder="$ Amount To Withdraw"
             />
             <button
-              id="btn-login"
+              id="btn-withdraw"
               class="bg-green-600 px-8 py-2 rounded-lg hover:bg-red-600"
             >
               Withdraw
@@ -74,6 +80,8 @@
         <!-- input section end -->
       </section>
     </main>
+    <script src="./js/diposit.js"></script>
+    <script src="./js/withdraw.js"></script>
     <script src="./tailwind.config.js"></script>
   </body>
 </html>
